@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="style.css"> 
+<div class="container">
+  <h2>Password Generator</h2>
+  <label for="length">Length of Password:</label>
+  <input type="number" id="length" placeholder="Enter Length" value="12" max="30">
+  <input type="text" id="output" readonly>
+  <div>
+    <button onclick="generatePsw()" class="btn">Generate</button>
+    <button onclick="copyPsw()" class="btn">Copy</button>
+  </div>
+</div>
