@@ -1,0 +1,42 @@
+/* CSS */
+html,body{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #4DFF4D;
+}
+.incoming-call{
+	background: #00cc00;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: solid 5px rgb(252, 241, 241);
+	animation: call 1.5s ease infinite;
+	color: aliceblue;
+	font-size: 30px;
+	/*font-weight: bold;*/
+	position: relative;
+}
+
+.call{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 35px;
+	left: 35px;
+}
+
+@keyframes call {
+	15% {
+		box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+	}
+	25% {
+		box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.5),
+					0 0 0 16px rgba(255, 255, 255, 0.3);
+	}
+	30% {
+		box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.5),
+					0 0 0 24px rgba(255, 255, 255, 0.3);
+	}
+}
