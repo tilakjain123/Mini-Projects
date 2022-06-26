@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style>
+body {
+  margin: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.x {
+  animation: x 3s linear infinite alternate;
+}
+.circle {
+   background: #24a6db;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: y 5s linear infinite alternate;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - 100px) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - 100px) );
+  }
+}
+</style>
+</head>
+<body>
+<div class="x">
+  <div class="circle"></div>
+</div>
+</body>
+</html>
