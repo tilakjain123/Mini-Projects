@@ -7,4 +7,5 @@ It contains:
 1. Password Generator
 2. Image Hover Overlay
 3. Instagram Logo
-4. And many more coming soon...
+4. Etc
+And many more coming soon...
