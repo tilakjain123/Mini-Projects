@@ -1,0 +1,61 @@
+/* main CSS */
+#main {
+  position: relative;
+  list-style: none;
+  background: #3aafde;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0;
+  margin: 50px auto;
+}
+#main li {
+  font-size: 0.8rem;
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  z-index: 4;
+  transition: 0.3s;
+  min-width: 120px;
+}
+li:hover{
+    background: #92d3ed !important;
+}
+
+.drop {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 48px;
+}
+.drop div {
+  transform: translate(0, -100%);
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+.drop li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background: #3aafde;
+}
+
+#main li:nth-child(3):hover ul div {
+  transform: translate(0, 0);
+}
+
+/* styling page */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #374954;
+  color: white;
+  text-align: center;
+}
