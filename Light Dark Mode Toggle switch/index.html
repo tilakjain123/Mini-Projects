@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Light Dark Mode Toggle Switch</title>
+</head>
+<body>
+<label class="toggle">
+
+  <input type="checkbox" onclick="toggleDarkLight()">
+
+  <span class="slider round"></span>
+
+</label>
+<script>
+function toggleDarkLight() {
+ var element = document.body; 
+
+        element.classList.toggle("dark-mode"); 
+
+}
+</script>
+</body>
+</html>
