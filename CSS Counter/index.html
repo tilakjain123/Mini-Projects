@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS Timer</title>
+<style>
+body {
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  counter-reset: my-count 5;
+  animation: countdown 5s linear infinite;
+}
+body::after {
+  content: counter(my-count);
+  font-size: 20em;
+  color: #000;
+}
+
+@keyframes countdown {
+  20% {
+    counter-increment: my-count -1;
+  }
+  40% {
+    counter-increment: my-count -2;
+  }
+  60% {
+    counter-increment: my-count -3;
+  }
+  80% {
+    counter-increment: my-count -4;
+  }
+}
+</style>
+</head>
+<body>
+
+</body>
+</html>
