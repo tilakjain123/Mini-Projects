@@ -1,6 +1,4 @@
-
-body
-{
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +16,7 @@ body
     width: 15px;
     border-radius: 50%;
     margin: 3px;
-background: #000;
+    background: #000;
     animation: loader .6s ease-in-out infinite;
 }
 .circle:nth-child(1){
