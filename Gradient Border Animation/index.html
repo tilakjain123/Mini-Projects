@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Animated Gradient Border</title>
+  <style>
+html {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+div {
+  width: 10rem;
+  height: 10rem;
+  --angle: 0deg;
+  border: 1rem solid;
+  border-image: linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59) 1;
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
