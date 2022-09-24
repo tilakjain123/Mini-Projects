@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Animated Checkbox ✅</title>
+  <style>
+body{
+display: grid;
+place-items: center;
+min-height: 100vh;
+font-family: sans-serif;
+}
+
+.input {
+  visibility: hidden;
+}
+
+.input + label {
+  position: relative;
+  padding-left: 5px;
+}
+.input + label:before {
+  position: absolute;
+  left: -20px;
+  border: 2px solid #3498db;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  transition: all 0.1s ease-in,  border-color 0.05s ease-in;
+}
+
+.input:checked + label::before {
+  transform: rotate(40deg);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  
+  top: 0;
+  left: -15px;
+  width: 7px;
+  height: 14px;
+}
+  </style>
+</head>
+<body>
+  <input type="checkbox" class="input" id="input" />
+  <label for="input">Remember Me</label>
+</body>
+</html>
