@@ -1,0 +1,39 @@
+.hey{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25vw;
+  animation: wave infinite ease-in-out;
+  font-family: "Righteous", cursive;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.hey:nth-of-type(1) {
+          animation-duration: 2s;
+          animation-delay: 0.55s;
+}
+
+.hey:nth-of-type(2) {
+          animation-duration: 2s;
+          animation-delay: 0.3s;
+}
+
+.hey:nth-of-type(3) {
+          animation-duration: 2s;
+          animation-delay: 0.05s;
+}
+
+.hey:nth-of-type(4) {
+          animation-duration: 2s;
+          animation-delay: -0.2s;
+}
+@keyframes wave {
+  40%, 50% {
+    transform: translate(-50%, -65%) scale(1.05);
+  }
+  0%, 90%, 100% {
+    transform: translate(-50%, -45%) scale(0.95);
+  }
+}
