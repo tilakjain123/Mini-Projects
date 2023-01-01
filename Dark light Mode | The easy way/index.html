@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="color-scheme" content="light">
+</head>
+
+<body> 
+
+  <select id="theme" onchange="switchTheme()">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+  </select> 
+
+  <script>
+function switchTheme() {
+  const theme = document.getElementById("theme").value;
+  document.getElementsByTagName("meta")[0].content = theme;
+}
+</script>
+</body>
+</html>
