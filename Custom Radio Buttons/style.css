@@ -1,0 +1,60 @@
+input[type="radio"] {
+  appearance: none;
+
+  width: 20px;
+
+  height: 20px;
+
+  cursor: pointer;
+
+  border: 2px solid rgb(218, 219, 221);
+
+  border-radius: 50%;
+
+  background-clip: content-box;
+
+  padding: 3px;
+
+  margin: 5px;
+}
+
+input[type="radio"]:checked {
+  background-color: rgb(213, 214, 219);
+}
+
+.form-control {
+  border: 2px solid white;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  color: white;
+
+  cursor: pointer;
+
+  margin: 5px;
+}
+
+.form-control:hover {
+  background: rgba(255, 255, 255, 0.349);
+}
+body {
+  /* display: grid;
+
+			place-items: center; */
+
+  /* height: 100vh; */
+
+  background: linear-gradient(178deg, #240238, #023257);
+
+  padding: 80px;
+  
+  font-family : sans-serif ;
+}
