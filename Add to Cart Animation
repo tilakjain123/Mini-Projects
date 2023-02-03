@@ -1,0 +1,11 @@
+<!-- fontawesome cdn for icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="./style.css" />
+<span class="pqt-minus">-</span>
+<button class="cart-button">
+  <span class="add-to-cart">Add to cart</span>
+  <span class="added"></span>
+  <i class="fa fa-shopping-cart"></i>
+</button>
+<span class="pqt-plus">+</span>
+<script src="./script.js"></script>
